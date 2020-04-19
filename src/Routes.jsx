@@ -27,7 +27,6 @@ export class Index extends Component {
           <Switch>
             <Route path="/india" component={India} />
             <Route path="/#/" component={Global} />
- 
           </Switch>
         </React.Fragment>
       </div>

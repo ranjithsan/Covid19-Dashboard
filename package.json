@@ -51,7 +51,7 @@
     "deploy": "gh-pages -d build",
     "publish-demo": "npm run build && npm run deploy"
   },
-  "homepage": "https://miteshtagadiya.github.io/Covid-19-Global-Dashboard/",
+  "homepage": "http://www.covid19trac.live",
   "eslintConfig": {
     "extends": "react-app"
   },

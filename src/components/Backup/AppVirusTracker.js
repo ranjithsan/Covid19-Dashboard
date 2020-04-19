@@ -10,7 +10,7 @@ import World from "../../assets/world.png";
 import Github from "../../assets/github1.png";
 import Virus from "../../assets/virus.gif";
 import ErrorBoundary from "../../components/ui/ErrorBoundry/ErrorBoundry";
-import Countrys from "../../utils/CountryList.json";
+import Countrys from "../../../utils/CountryList.json";
 import ReactGA from "react-ga";
 import CustomChart from "../../components/charts/PieChart/CustomChart";
 import DataMap from "../../components/charts/DataMap/DataMap";

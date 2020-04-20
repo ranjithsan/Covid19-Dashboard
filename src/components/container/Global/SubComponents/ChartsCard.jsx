@@ -12,8 +12,8 @@ class ChartsCard extends Component {
       control: (styles) => ({
         ...styles,
         backgroundColor: "white",
-        marginRight: 15,
-        marginBottom: 15,
+        marginRight: 5,
+        marginBottom: 5,
       }),
       option: (styles, { data, isDisabled, isFocused, isSelected }) => {
         return {

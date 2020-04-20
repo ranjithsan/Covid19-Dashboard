@@ -69,6 +69,7 @@ class Global extends Component {
       .then((res) => res.json())
       .then((response) => {
         this.setState({
+
           deathsRate: response,
         });
       })
@@ -122,7 +123,7 @@ class Global extends Component {
     });
     cardId.map((location) => {
       fetch(
-        `https://cors-proxy-pass.herokuapp.com/https://thevirustracker.com/free-api?countryTotals=ALL`,
+        `https://api.covid19api.com/summary`,
         {
           method: "GET",
         }
@@ -145,7 +146,7 @@ class Global extends Component {
   getChartsData(data) {
     data.map((location) => {
       fetch(
-        `https://cors-proxy-pass.herokuapp.com/https://thevirustracker.com/free-api?countryTimeline=${location}`,
+        `https://thevirustracker.com/free-api?countryTimeline=${location}`,
         {
           method: "GET",
         }

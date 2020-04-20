@@ -148,6 +148,7 @@ class Global extends Component {
       fetch(
         `https://thevirustracker.com/free-api?countryTimeline=${location}`,
         {
+         header: { "Access-Control-Allow-Origin": "*" },
           method: "GET",
         }
       )

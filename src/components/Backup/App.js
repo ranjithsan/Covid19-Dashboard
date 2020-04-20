@@ -118,6 +118,7 @@ class App extends Component {
         });
       });
     fetch(`https://covid19-global-api.herokuapp.com/global.json`, {
+     header: { "Access-Control-Allow-Origin": "*" },
       method: "GET",
     })
       .then((res) => res.json())
@@ -160,6 +161,7 @@ class App extends Component {
       fetch(
         `https://cors-proxy-pass.herokuapp.com/https://thevirustracker.com/free-api?countryTotals=ALL`,
         {
+         header: { "Access-Control-Allow-Origin": "*" },
           method: "GET",
         }
       )
@@ -183,6 +185,7 @@ class App extends Component {
       fetch(
         `https://cors-proxy-pass.herokuapp.com/https://thevirustracker.com/free-api?countryTimeline=${location}`,
         {
+         header: { "Access-Control-Allow-Origin": "*" },
           method: "GET",
         }
       )
